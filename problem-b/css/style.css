@@ -11,8 +11,8 @@ table {
     border-collapse: collapse;
 }
 
-td {
-    padding: 0.5em;
+th, tbody, td {
+    padding: .5em;
     border-bottom: 1px solid #d3d3d3;
 }
 
@@ -23,10 +23,16 @@ th {
     background-color: #d3d3d3;
 }
 
-tr:nth-child(odd){
+tbody tr:nth-child(even) {
     background-color: #eee;
 }
+
+tbody tr:hover {            
+    background-color: pink;
+}
+
 .cover {
     width: 100px;
     height: 100px;
 }
+ 
